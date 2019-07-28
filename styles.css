@@ -1,0 +1,14 @@
+<style>
+        /* #gridContainer {
+          display: Grid;
+          grid-template-columns: auto auto auto auto;
+          grid-template-columns: auto auto auto auto;
+          outline-color: black;
+          outline-width: 2px;
+        } */
+        .cellStyle {
+          height: 10px;
+          width: 10px;
+          border: 1px solid black;
+        }
+      </style>
