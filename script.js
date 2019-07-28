@@ -1,4 +1,4 @@
-<script>
+{/* <script>
 const rowsInput = document.querySelector("input[id = 'rows']");
 const columnsInput = document.quertySelector("input[id = 'columns']");
 const form = document.querySelector("form");
@@ -15,4 +15,4 @@ form.addEventListener('submit', (ev)=> {
   }
   grid.innerHTML = html;
 })
-</script>
+</script> */}
