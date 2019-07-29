@@ -1,5 +1,6 @@
 <html>
   <head>
+    </head>
     <body>
         <style>
             /* #gridContainer {
@@ -15,8 +16,9 @@
               border: 1px solid black;
             }
           </style>
-
+          <div id = "formHeader"></div>
       <h1> Acme Grid Maker </h1>
+      <div>
       <form action="/action_page.php">
         <p>
         <label>Rows:</label>
@@ -26,7 +28,8 @@
         <input id = "columns" type= number value="">
         <div>
 <button id = "makeGrid"> Make Grid </button>
-</div>
+        </div>
+        </form>
         <div id = "gridContainer">
         </div>
         <script>
@@ -47,9 +50,7 @@
               grid.innerHTML = html;
             })
             </script>
-
     </body>
-  </head>
 </html>
 
 
