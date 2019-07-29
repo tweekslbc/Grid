@@ -30,7 +30,9 @@
 <button id = "makeGrid"> Make Grid </button>
         </div>
         </form>
-        <div id = "gridContainer">
+        <div id = "gridContainer" >
+          <div id= "insideDiv">
+          </div>
         </div>
         <script>
             const rowsInput = document.querySelector("input[id = 'rows']");
@@ -40,6 +42,7 @@
             form.addEventListener('submit', (ev)=> {
               ev.preventDefault();
               let html = "";
+
               for (let i = 0; i < rowsInput.value; i++){
                 html += "<div class = 'cellStyle'>";
                 for (let j =0; j < columnsInput.value; j++){
