@@ -1,17 +1,18 @@
 <html>
   <head>
       <style>
-          /* #gridContainer {
-            display: Grid;
-            grid-template-columns: auto auto auto auto;
-            grid-template-columns: auto auto auto auto;
-            outline-color: black;
-            outline-width: 2px;
-          } */
-          .cellStyle {
-            height: 10px;
-            width: 10px;
-            border: 1px solid black;
+           #gridContainer {
+            display: flex;
+            flex-direction: column;
+          }
+          #gridContainer > div{
+            display: flex;
+
+          }
+          #gridContainer > div > div {
+            height: 15px;
+            width: 15px;
+            border: solid 1px black;
           }
         </style>
     </head>
@@ -36,13 +37,13 @@
         </div>
         <script>
             const rowsInput = document.querySelector("input[id = 'rows']");
-            const columnsInput = document.quertySelector("input[id = 'columns']");
+            const columnsInput = document.querySelector("input[id = 'columns']");
             const form = document.querySelector("form");
             const grid = document.querySelector("#gridContainer");
+            const grid2 = document.querySelector("#insideDiv")
             form.addEventListener('submit', (ev)=> {
               ev.preventDefault();
               let html = "";
-
               for (let i = 0; i < rowsInput.value; i++){
                 html += "<div class = 'cellStyle'>";
                 for (let j =0; j < columnsInput.value; j++){
@@ -51,6 +52,7 @@
               html += "</div>";
               }
               grid.innerHTML = html;
+              grid2.innerHTML = html;
             })
             </script>
     </body>
